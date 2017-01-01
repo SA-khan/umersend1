@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saad.inventrymanagementapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Inventory Management App"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomerActivity"
+            android:label="Customer Activity" />
+        <activity
+            android:name=".ShopKeeperActivity"
+            android:label="Shop Keeper Activity" />
+        <activity
+            android:name=".ManagerActivity"
+            android:label="Manager Activity" />
+        <activity android:name=".NewItemAddActivity" android:label="Add New Item Activity" />
+        <activity android:name=".SearchAnItemActivity" android:label="Search An Item Activity" />
+        <activity android:name=".UpdateAnItemActivity" android:label="Update Item Activity"/>
+        <activity android:name=".DeleteAnItemActivity" android:label="Delete An Item Activity"></activity>
+    </application>
+
+</manifest>

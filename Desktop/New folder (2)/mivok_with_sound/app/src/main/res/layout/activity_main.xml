@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saad.mivok.MainActivity">
+
+    <Button
+        android:id="@+id/numbers"
+        android:onClick="openNumber"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:text="Numbers"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left|center_vertical"
+        android:padding="16dp"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/family"
+        android:onClick="openFamily"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#2E7D32"
+        android:text="Family Members"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:padding="16dp"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/colors"
+        android:onClick="openColor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#691A99"
+        android:text="Colors"
+        android:layout_weight="1"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:padding="16dp"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/phrases"
+        android:onClick="openPhrases"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#40C4FF"
+        android:text="Phrases"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:gravity="left|center_vertical"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:elevation="10dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

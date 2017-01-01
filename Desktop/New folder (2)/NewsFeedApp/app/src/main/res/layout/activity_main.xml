@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saad.newsfeedapp.MainActivity">
+
+    <TextView
+        android:layout_above="@+id/table1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search A Specific News"
+        android:layout_marginTop="30sp"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+<LinearLayout
+    android:background="#B2DFDB"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:id="@+id/table1">
+
+    <EditText
+        android:id="@+id/aboutNews"
+        android:textColorHint= "#000000"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="About ( Any Specifics )"
+        android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/categoryNews"
+        android:textColorHint= "#000000"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/searchNews"
+        android:background="#6200EA"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:paddingTop="12dp"
+        android:layout_marginTop="29dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate this app"
+        android:textSize="18sp"
+        android:layout_below="@id/table1"/>
+
+    <RatingBar
+        android:soundEffectsEnabled="true"
+        android:tag="Rate This App"
+        android:elevation="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/tv" />
+
+</RelativeLayout>
